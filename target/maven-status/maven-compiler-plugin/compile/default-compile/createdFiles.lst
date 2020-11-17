@@ -1,0 +1,10 @@
+com/ecosystem/picocli/CheckSum.class
+com/ecosystem/protobuf/PersonProtobuf$1.class
+com/ecosystem/rabbitmq/RabbitMqClient.class
+com/ecosystem/protobuf/PersonProtobuf$Person$Builder.class
+com/ecosystem/protobuf/PersonProtobuf$Person.class
+com/ecosystem/ProtobufBrokerCliApplication.class
+com/ecosystem/protobuf/PersonProtobuf$Person$1.class
+com/ecosystem/protobuf/PersonProtobuf.class
+com/ecosystem/protobuf/PersonProtobuf$PersonOrBuilder.class
+com/ecosystem/protobuf/mapper/ProtobufMapper.class
