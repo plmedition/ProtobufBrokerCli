@@ -15,20 +15,10 @@ class RabbitMqClientTest {
     private RabbitMqClient rabbitMqClient;
 
     @Test
-    public void testSendPersonMessage() {
+    public void testSendPersonAndGetMessage() {
         PersonProtobuf.Person person = PersonProtobuf.Person.newBuilder().setName("Pablo").setId(1).setEmail("pablo@mail.com").build();
-        for(int i = 0 ; i<20; i++) {
-            rabbitMqClient.send(person);
-        }
-
-    }
-
-    @Test
-    public void testReceivePersonMessage() {
-        for(int i = 0 ; i<20; i++) {
-            System.out.println(i);
-            PersonProtobuf.Person person = rabbitMqClient.receive();
-            assertNotNull(person);
-        }
+        rabbitMqClient.send(person);
+        person = rabbitMqClient.receive();
+        assertNotNull(person);
     }
 }

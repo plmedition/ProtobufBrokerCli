@@ -7,13 +7,11 @@ import com.ecosystem.service.ProtobufBrokerCliService;
 import com.ecosystem.service.exception.ProtobufBrokerCliException;
 import com.ecosystem.service.response.GetResponse;
 import com.ecosystem.service.response.SendToMessageBrokerResponse;
-import org.springframework.amqp.core.Exchange;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
-import java.io.InputStream;
 import java.nio.file.Files;
 
 @Service
@@ -27,7 +25,7 @@ public class ProtobufBrokerCliServiceImpl extends ProtobufBrokerCliServiceUtils 
     private RabbitMqClient rabbitMqClient;
 
     @Override
-    public SendToMessageBrokerResponse sendToMessageBroker(String fileName) throws Exception {
+    public SendToMessageBrokerResponse sendToMessageBroker(String fileName){
         SendToMessageBrokerResponse response = new SendToMessageBrokerResponse();
         String jsonString;
         try {

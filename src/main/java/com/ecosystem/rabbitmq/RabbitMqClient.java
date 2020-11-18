@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+/**
+ * Implementation of the rabbitTemplate client that will access to the protobuf_queue to send
+ * and get the messages stored on it
+ */
 @Component
 public class RabbitMqClient {
 

@@ -7,6 +7,9 @@ import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.support.converter.AbstractMessageConverter;
 import org.springframework.amqp.support.converter.MessageConversionException;
 
+/**
+ * Converter used to serialize and deserialize json and protobuf messages
+ */
 public class PersonProtobufMessageConverter extends AbstractMessageConverter {
 
     @Override
